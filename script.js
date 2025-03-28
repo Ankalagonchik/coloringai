@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Мобильное меню
+  // Mobile menu
   const mobileMenuButton = document.getElementById('mobileMenuButton');
   const mobileMenu = document.getElementById('mobileMenu');
   
@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
       mobileMenu.classList.toggle('active');
     });
     
-    // Закрытие меню при клике на пункт меню
+    // Close menu when clicking a menu item
     window.closeMenu = function() {
       mobileMenu.classList.remove('active');
     };
   }
   
-  // Слайдеры сравнения
+  // Comparison sliders
   const comparisonSliders = document.querySelectorAll('.comparison-slider');
   
   comparisonSliders.forEach(slider => {
@@ -22,57 +22,57 @@ document.addEventListener('DOMContentLoaded', function() {
     const handle = slider.querySelector('.slider-handle');
     let isDragging = false;
     
-    // Обработчик начала перетаскивания
+    // Drag start handler
     const startDrag = (e) => {
       isDragging = true;
       e.preventDefault();
     };
     
-    // Обработчик окончания перетаскивания
+    // Drag end handler
     const endDrag = () => {
       isDragging = false;
     };
     
-    // Обработчик перемещения
+    // Drag movement handler
     const drag = (e) => {
       if (!isDragging) return;
       
       let clientX;
       
-      // Обработка тачскринов
+      // Handle touch screens
       if (e.type === 'touchmove') {
         clientX = e.touches[0].clientX;
       } else {
         clientX = e.clientX;
       }
       
-      // Получаем координаты слайдера
+      // Get slider coordinates
       const rect = slider.getBoundingClientRect();
       
-      // Вычисляем положение в процентах
+      // Calculate position as percentage
       let position = (clientX - rect.left) / rect.width;
       
-      // Ограничиваем положение от 0 до 1
+      // Limit position between 0 and 1
       position = Math.max(0, Math.min(1, position));
       
-      // Устанавливаем положение
+      // Set position
       const percent = position * 100;
       beforeContainer.style.width = `${percent}%`;
       handle.style.left = `${percent}%`;
     };
     
-    // Добавляем обработчики событий для мыши
+    // Add mouse event listeners
     handle.addEventListener('mousedown', startDrag);
     window.addEventListener('mouseup', endDrag);
     window.addEventListener('mousemove', drag);
     
-    // Добавляем обработчики событий для тачскринов
+    // Add touch event listeners
     handle.addEventListener('touchstart', startDrag);
     window.addEventListener('touchend', endDrag);
     window.addEventListener('touchmove', drag);
   });
   
-  // Плавная прокрутка для якорных ссылок
+  // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -80,11 +80,11 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         window.scrollTo({
-          top: target.offsetTop - 80, // Учитываем высоту навбара
+          top: target.offsetTop - 80, // Account for navbar height
           behavior: 'smooth'
         });
         
-        // Закрываем мобильное меню
+        // Close mobile menu
         if (mobileMenu) {
           mobileMenu.classList.remove('active');
         }
@@ -92,22 +92,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Форма контактов
+  // Contact form
   const contactForm = document.getElementById('contactForm');
   
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // В реальном проекте здесь будет отправка данных формы
-      alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+      // In a real project, form data would be sent here
+      alert('Thank you for your message! We will get back to you within 24 hours.');
       
-      // Очищаем форму
+      // Clear the form
       contactForm.reset();
     });
   }
   
-  // Анимация при прокрутке
+  // Scroll animation
   function animateOnScroll() {
     const elements = document.querySelectorAll('.service-card, .process-step, .gallery-item, .pricing-card, .testimonial-card');
     
@@ -115,14 +115,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const elementPosition = element.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
       
-      // Если элемент в пределах видимой области
+      // If element is within visible area
       if (elementPosition < windowHeight * 0.85) {
         element.classList.add('animate-in');
       }
     });
   }
   
-  // Добавляем класс для CSS-анимации
+  // Add class for CSS animation
   const styleSheet = document.styleSheets[0];
   styleSheet.insertRule(`
     .service-card, .process-step, .gallery-item, .pricing-card, .testimonial-card {
@@ -139,11 +139,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   `, styleSheet.cssRules.length);
   
-  // Запускаем анимацию при загрузке и прокрутке
+  // Start animation on load and scroll
   animateOnScroll();
   window.addEventListener('scroll', animateOnScroll);
   
-  // Фиксированная навигационная панель с изменением фона при прокрутке
+  // Fixed navigation bar with background change on scroll
   function handleNavbarBackground() {
     const navbar = document.querySelector('.navbar');
     
@@ -157,5 +157,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   window.addEventListener('scroll', handleNavbarBackground);
-  handleNavbarBackground(); // Инициализация
+  handleNavbarBackground(); // Initialize
 });
