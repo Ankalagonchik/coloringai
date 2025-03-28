@@ -1,0 +1,70 @@
+Design a sleek, modern, and minimalist website layout for a creative agency. Prioritize clean lines, ample white space, and a neutral color palette with one bold accent color (e.g., deep blue or muted coral). Use sans-serif typography with a focus on readability. Include subtle animations for interactive elements (buttons, hover effects). Structure the layout with:
+
+A hero section featuring a bold headline, a short tagline, and a CTA button.
+
+A services/features grid (3-4 cards with minimalist icons).
+
+A full-width image or video section with overlay text.
+
+A contact section with a simple form and social media links.
+Ensure mobile responsiveness, intuitive navigation (hidden hamburger menu for mobile), and a sticky header. Avoid clutter—keep visuals functional and text concise. Use AI-generated abstract geometric shapes or gradients for background accents. Maintain a balance between professionalism and creativity."
+
+Optional additions:
+
+Include dark/light mode toggle in the design.
+
+Suggest ideal image styles (e.g., muted tones, modern vector art).
+
+Add a portfolio grid with hover-driven captions.
+
+Этот сайт для предложения услуги покраски старых черно-белых фильмов с помощью ИИ, перепиши промпт
+Хорошо, пользователь хочет адаптировать предыдущий промпт для создания дизайна сайта, который предлагает услугу покраски старых черно-белых фильмов с помощью ИИ. Надо учесть специфику этой услуги.
+
+Первым делом, нужно сохранить современный и минималистичный стиль, но добавить элементы, связанные с кино и реставрацией. Возможно, использовать тематические изображения, например, кадры из фильмов до и после обработки.
+
+Важно подчеркнуть переход от черно-белого к цветному. Может, использовать градиенты или эффекты преобразования в дизайне. Акцентный цвет должен быть связан с кинематографом — золотой или киноварный, как в старых киноафишах.
+
+Структура сайта должна включать разделы, объясняющие процесс работы ИИ, примеры работ (до/после), возможно, форму загрузки файлов для оценки. Нужны анимированные элементы, показывающие трансформацию, например, hover-эффекты, которые добавляют цвет к черно-белым изображениям.
+
+Также стоит добавить раздел с часто задаваемыми вопросами о технологии и доверием клиентов. Мобильная версия обязательна, чтобы пользователи могли легко загружать свои файлы с любых устройств.
+
+Проверю, все ли элементы предыдущего промпта учтены и адаптированы под новую тематику. Убедиться, что дизайн остается функциональным, без лишних деталей, но при этом передает суть услуги — преобразование старых фильмов в цветные с помощью современных технологий.
+
+Revised Prompt for AI-Generated Modern Website Design:
+"Design a sleek, minimalist website for an AI-powered service that colorizes vintage black-and-white films. Emphasize a cinematic aesthetic with subtle retro-modern fusion. Prioritize:
+
+Color Palette: Dark gradients (charcoal, deep navy) contrasted with warm golden accents to evoke film reels and vintage cinema. Include before/after sliders to showcase AI colorization.
+
+Typography: Clean sans-serif fonts for readability, paired with a bold cinematic-style typeface for headlines.
+
+Visuals: Use split-screen comparisons (black-and-white vs. colorized film stills) and subtle film grain textures. Add animated transitions mimicking filmstrip motion.
+
+Structure:
+
+Hero Section: Full-screen video background of a colorized film clip with overlay text: "Breathe New Life into Classic Cinema" + CTA button ("Restore Your Film").
+
+Process Section: A 3-step animated timeline (Upload → AI Colorization → Download) with minimalist film reel icons.
+
+Gallery: Grid of interactive before/after film frames (hover to reveal colorization). Include client testimonials overlaid on vintage projector illustrations.
+
+Pricing/CTA: Simple tiered plans (Basic/Pro/Archive) with a custom upload button for film samples.
+
+Key Features:
+
+Seamless file upload interface with preview thumbnails.
+
+Embedded video demo showing AI colorization in real-time.
+
+Subtle motion effects (e.g., flickering projector light animation in headers).
+
+Mobile-optimized with a dark theme to enhance film visuals.
+
+Avoid: Cluttered layouts, overly bright colors, or generic stock imagery. Lean into cinematic drama while maintaining modern minimalism."
+
+Optional Additions:
+
+Add a "History" section with vintage camera illustrations fading into color.
+
+Include a blog preview titled "The Art of Film Preservation".
+
+Use CSS scroll effects that mimic film reel unwinding.
